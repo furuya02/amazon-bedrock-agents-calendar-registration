@@ -1,0 +1,6 @@
+*.js
+*.d.ts
+
+# 必要に応じてESLintを適用
+test/
+cdk.out/

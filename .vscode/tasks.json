@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "typescript",
+      "tsconfig": "tsconfig.json",
+      "option": "watch",
+      "problemMatcher": ["$tsc-watch"],
+      "group": "build",
+      "label": "tsc: ウォッチ - tsconfig.json"
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": "test",
+      "problemMatcher": [],
+      "label": "npm: test",
+      "detail": "jest --forceExit --config=jest.config.json"
+    },
+    {
+      "type": "npm",
+      "script": "format:fix",
+      "label": "npm: format:fix",
+      "detail": "format:fix",
+      "problemMatcher": []
+    }
+  ]
+}
